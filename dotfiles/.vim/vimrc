@@ -1,0 +1,13 @@
+if &compatible
+  set nocompatible
+endif
+
+function! s:load(file) abort
+    let path = expand('$HOME/.vim/' . a:file . '.vim')
+
+    if filereadable(path)
+        execute 'source' fnameescape(path)
+    endif
+endfunction
+
+call s:load('config')
