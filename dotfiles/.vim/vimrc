@@ -11,3 +11,4 @@ function! s:load(file) abort
 endfunction
 
 call s:load('config')
+call s:load('plugin')
