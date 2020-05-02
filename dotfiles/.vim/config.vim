@@ -11,3 +11,4 @@ set nobackup
 set noswapfile
 set noundofile
 set clipboard=unnamed,unnamedplus
+let mapleader = "\<Space>"

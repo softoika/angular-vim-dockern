@@ -16,3 +16,12 @@ depends = 'fzf'
 repo = 'junegunn/fzf'
 build = './install --all'
 merged = 0
+
+[[plugins]]
+repo = 'softoika/ngswitcher.vim'
+hook_add = '''
+nnoremap <leader>u :<C-u>NgSwitchTS<CR>
+nnoremap <leader>i :<C-u>NgSwitchCSS<CR>
+nnoremap <leader>o :<C-u>NgSwitchHTML<CR>
+nnoremap <leader>p :<C-u>NgSwitchSpec<CR>
+'''
