@@ -1,5 +1,6 @@
 FROM alpine:3.11
-RUN apk update && apk upgrade && apk add --no-cache vim bash git curl \
+RUN apk update && apk upgrade \
+ && apk add --no-cache vim bash git curl fzf the_silver_searcher \
  && rm -f /var/cache/apk/*
 
 COPY ./dotfiles/ /root/

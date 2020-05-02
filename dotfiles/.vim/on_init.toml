@@ -1,10 +1,18 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-[[plugins]] # カラースキーマ
+[[plugins]]
 repo = 'w0ng/vim-hybrid'
 hook_add = '''
 set background=dark
 colorscheme hybrid
 '''
 
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depends = 'fzf'
+
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+merged = 0
