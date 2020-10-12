@@ -12,3 +12,4 @@ endfunction
 
 call s:load('config')
 call s:load('plugin')
+syntax enable
